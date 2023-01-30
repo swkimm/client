@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        [title] {
+          color: purple;  
+        }
+        /* title 속성의 값이 hello인 요소들 */
+        /* "" 추가해도, 안해도 상관 없음 */
+        [title="hello"] {
+            background-color: gold;
+        }
+
+        /* title 속성의 값이 world인 요소들 */
+        /* 의 배경을 초콜릿으로 */
+        [title="world"] {
+            background-color: chocolate;
+        }
+
+        [title~="hello"] {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 title="hello">Lorem.</h1>
+    <h1 title="world">Nesciunt.</h1>
+    <h1 title="hello world">Modi!</h1>
+    <h1>Asperiores.</h1>
+    <h1>Mollitia?</h1>
+</body>
+</html>
