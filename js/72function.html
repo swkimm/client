@@ -14,23 +14,25 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        for (let i = 1; i <= 9; i++) {
-            console.log("===="+ i + "단===");
-            for (let j = 1; j <= 9; j++) {
-                console.log(i + " X " + j + " = " + (i * j));
-            }
-            console.log("==========================");
-        }
-        console.log("거꾸로 출력");
 
-        for (let a = 9; a >= 1; a--) {
-            console.log("===="+ a + "단===");
-            for (let b = 9; b >= 1; b--) {
-                console.log(a + " X " + b + " = " + (a * b));
-            }
-            console.log("==========================");
+        console.log(1);
+        console.log(2);
+        console.log(3);
+    
+        // 함수(function) 작성방법
+        // function 함수이름(파라미터1, 파라미터2) { 실행될 코드들 }
+        function a() {
+            // 함수(function)
+            // 바로 실행되지 않고 나중에 실행하기 위해 묶은 코드들(code block)
+            console.log(4);
+            console.log(5);
         }
+            console.log(6);
 
+            // 함수 실행 방법
+            // 함수명(아규먼트1, 아큐먼트2)
+
+            a();
 
     </script>
 </body>

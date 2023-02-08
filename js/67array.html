@@ -14,24 +14,18 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        for (let i = 1; i <= 9; i++) {
-            console.log("===="+ i + "단===");
-            for (let j = 1; j <= 9; j++) {
-                console.log(i + " X " + j + " = " + (i * j));
-            }
-            console.log("==========================");
-        }
-        console.log("거꾸로 출력");
+        let a = ['java', 'css', 'spring', 'jsp'];
 
-        for (let a = 9; a >= 1; a--) {
-            console.log("===="+ a + "단===");
-            for (let b = 9; b >= 1; b--) {
-                console.log(a + " X " + b + " = " + (a * b));
-            }
-            console.log("==========================");
+        for (let j = 0; j < a.length; j++) {
+            console.log(a[j]);
         }
 
+        console.log("거꾸로 탐색");
 
+
+        for (let i = a.length-1; i >= 0; i--) {
+            console.log(a[i]);
+        }
     </script>
 </body>
 

@@ -14,24 +14,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        for (let i = 1; i <= 9; i++) {
-            console.log("===="+ i + "단===");
-            for (let j = 1; j <= 9; j++) {
-                console.log(i + " X " + j + " = " + (i * j));
-            }
-            console.log("==========================");
-        }
-        console.log("거꾸로 출력");
+        let a = ['java', 'spring', 55];
+        console.log(a[0]);
+        console.log(a[2]);
 
-        for (let a = 9; a >= 1; a--) {
-            console.log("===="+ a + "단===");
-            for (let b = 9; b >= 1; b--) {
-                console.log(a + " X " + b + " = " + (a * b));
-            }
-            console.log("==========================");
-        }
+        // object 객체 : 여러 값을 저장한 자료형(data type)
+        // 사용 기호 : { }
+        // 각 값에 이름을 명시(property)
+        let b = { lang: "java", frame: "spring", age: 55 };
 
+        // 값을 읽을 때 ["property name"] 사용 (거의 안씀)
+        console.log(b["lang"]);
+        console.log(b["spring"]);
+        console.log(b["age"]);
 
+        // 값을 읽을 때 .propertyName 사용 (이 형식으로 사용할 것)
+        console.log(b.lang);
+        console.log(b.frame);
+        console.log(b.age);
+        
+        
     </script>
 </body>
 

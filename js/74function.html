@@ -14,24 +14,33 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        for (let i = 1; i <= 9; i++) {
-            console.log("===="+ i + "단===");
-            for (let j = 1; j <= 9; j++) {
-                console.log(i + " X " + j + " = " + (i * j));
-            }
-            console.log("==========================");
-        }
-        console.log("거꾸로 출력");
 
-        for (let a = 9; a >= 1; a--) {
-            console.log("===="+ a + "단===");
-            for (let b = 9; b >= 1; b--) {
-                console.log(a + " X " + b + " = " + (a * b));
-            }
-            console.log("==========================");
+        function printHello() {
+            console.log("Hello");
         }
 
+        function printWorld() {
+            console.log("World");
+        }
 
+        // 함수 작성/정의/선언
+        function printHelloWorld() {
+            function newFunction() {
+                console.log("new Function");
+            }
+
+            printHello();
+            printWorld();
+            newFunction()
+        }
+
+        // 함수실행(execute), 함수호출(call, invoke)
+        printHello();
+        printWorld();
+        printHelloWorld();
+
+        // newFunction(); 
+        // 함수 내부에 생성된 함수이기때문에 외부에서 호출 불가
     </script>
 </body>
 
