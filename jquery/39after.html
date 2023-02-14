@@ -9,27 +9,26 @@
     </style>
 </head>
 <body>
-
+    <input type="text" id="input1">
+    <ul id="list1">
+        <li>
+            Lorem.
+        </li>
+    </ul>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    
+        $("#input1").keyup(function (e) {
+            if(e.key == "Enter") {
+                let content = $(this).val();
+                let liElem = $("<li / >"); //<li></li>
+                liElem.text(content);
+                $(this).val("");
 
-        // 객체 선언
-        let person = {
-            name : "son",
-            age : 33,
-            describe: function() {
-                // console.log("이름은 손이고 나이는 33입니다.");
-                // 메소드가 실행되고 있는 객체
-                console.log("이름은 " + this.name + "나이는 " + this.age +"입니다.");
+                $("#list1 > li:last-child").after(liElem);
             }
-        }
-
-        // this : 실행되고 있는 메소드의 소유객체를 가리킴
-        person.describe();
-        person.age = 55;
-        
-        console.log(person.age);
-        person.describe();
+        });
 
     </script>
 </body>

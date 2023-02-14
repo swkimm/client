@@ -9,28 +9,32 @@
     </style>
 </head>
 <body>
-
+    <h1 id="head1">
+        Lorem, ipsum.
+        <span>
+            Lorem.
+        </span>
+    </h1>
+    <h1 id="head2">
+        Rerum, dolore.
+        <span>
+            Aliquid!
+        </span>
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        // text() 메소드
+        // 하위 항목을 포함하여 일치하는 요소 집합에서 각 요소의 결합된 텍스트 콘텐츠를 가져옵니다.
+        let text1 = $("#head1").text();
+        console.log(text1);
 
-        // 객체 선언
-        let person = {
-            name : "son",
-            age : 33,
-            describe: function() {
-                // console.log("이름은 손이고 나이는 33입니다.");
-                // 메소드가 실행되고 있는 객체
-                console.log("이름은 " + this.name + "나이는 " + this.age +"입니다.");
-            }
-        }
+        console.log($("#head2").text());
 
-        // this : 실행되고 있는 메소드의 소유객체를 가리킴
-        person.describe();
-        person.age = 55;
-        
-        console.log(person.age);
-        person.describe();
+        console.log($("#head1 span").text());
+        console.log($("#head2 span").text());
 
+        console.log($("span").text());
     </script>
 </body>
 </html>
